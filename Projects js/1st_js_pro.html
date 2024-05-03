@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(34, 27, 27);
+            color: antiquewhite;
+
+        }
+.container{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+align-items: center;
+justify-content: space-evenly;
+    
+    background-color: rgb(255, 239, 239);
+}
+        .btn{
+            height: 15mm;
+            width: 35mm;
+            border-radius: 20px;
+            background-color: rgb(137, 218, 255);
+            color: rgb(57, 1, 1);
+            text-align: center;
+        box-shadow: 2px 3px 2px rgb(11, 44, 126) inset;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn" id="box1">click in this box to see changes</div>
+        <div class="btn" id="box2">click in this box to see changes</div>
+        <div class="btn" id="box3">click in this box to see changes</div>
+        <div class="btn" id="box4">click in this box to see changes</div>
+        <div class="btn" id="box5">click in this box to see changes</div>
+    </div>
+
+
+<!-- java script------------------------------------------------------ -->
+    <script>
+let btn_style=document.querySelectorAll('.btn')
+let box_style=document.querySelector('.container') 
+btn_style.forEach(function(element){
+    // console.log(element)------------------this line are sed to track elements
+  
+    element.addEventListener('click', function (e) {
+    // console.log(e);----------------this line are sed to track elements
+    // console.log(e.target);---------
+// box 1 ---------------------
+    if (e.target.id === 'box1') {
+       let ans=prompt("are you want to change container color")
+       if(ans=="yes"||"Yes"||"YES") {
+        box_style.style.backgroundColor="green"
+       }
+       else{
+        box_style.style.backgroundColor="red"
+       }
+    }
+    // box 2 ---------------------------------------
+    if (e.target.id === 'box2') {
+      box_style.style.backgroundColor = "ORANGE"
+    }
+    // box 3 ---------------------------------------
+    if (e.target.id === 'box3') {
+      box_style.style.backgroundColor = "blue"
+    }
+    // box 4 ---------------------------------------
+    if (e.target.id === 'box4') {
+      box_style.style.backgroundColor = "red"
+    }
+    // box 5 ---------------------------------------
+    if (e.target.id === 'box5') {
+      box_style.style.backgroundColor = "black"
+    }
+})})
+
+    </script>
+</body>
+</html>

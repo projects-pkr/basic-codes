@@ -1,0 +1,85 @@
+
+        body {
+        
+        }
+           header {
+            width: vw;
+            height: 10vh;
+            border: 2px solid yellow;
+            position: relative;
+        }
+        .navtab{
+            margin: 10px;
+        }
+
+        li {
+            list-style: none;
+             position: absolute;
+             left: 13px;
+              top: 10px;
+              margin-left: 10px;
+ }
+ 
+        .section {
+        width: 60vw;
+            height: 100vh;
+            border: 2px solid red;
+        display: flex;
+        justify-content: space-evenly;
+           
+
+        }
+
+       section #first {
+        background-color: blueviolet;
+        left: 20vw;
+        top: 13vh;
+            
+        }
+
+       section #second {
+        background-color: blanchedalmond;
+        top: 80vh;
+        left: 12vw;
+
+
+
+        
+
+        }
+        .section #second .box{
+            border-color: blueviolet;
+        }
+
+
+       aside #rightside {
+        height: 78vh;
+        width: 19vw;
+        position: absolute;
+        left: 82vw;
+        top: 12vh;
+        border: 2px solid blue;
+
+            
+
+        }
+aside #leftside {
+        height: 100vh;
+        width: 19vw;
+        left: 6px;
+        top: 12vh;
+        border: 2px solid blue;
+        position: absolute;
+
+  }
+
+        footer {
+            overflow:scroll; 
+            position: absolute;
+            top: 83vh;
+            width: 100vw;
+            height: 10vh;
+            border: 2px solid green;
+
+        }
+         

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ddoms</title>
+    <style>
+        body {
+            background-color: rgb(43, 40, 40);
+            color: beige;
+        }
+
+        .container {
+            border: 2px solid rgb(223, 88, 88);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="ulist">
+            <li>this is first item</li>
+            <li>this is second item</li>
+            <li>this is third item</li>
+            <li>this is fourth item</li>
+            <li>this is fifth item</li>
+
+        </ul>
+    </div>
+    <script>
+
+        function insert__li(element) {
+e        let item = document.createElement('li');
+            item.innerHTML = `${element}`
+            document.querySelector('.ulist').appendChild(item)
+        }
+        insert__li("this is sixth list element")
+        insert__li("this is seventh element ")
+        // create element using innerhtml is not a optimized way 
+        // it traverse whole ul doc so we  should not us in larger code or project 
+        // there for we use appent *createtextnode* in place of innerHTML
+
+        // function opt-insert_li(element){
+        //     let item = document.createElement('li')
+        //     item.appendChild(document.createtextnode(element))
+        //     document.querySelector('.ulist').appendChild(item)
+        // }
+        // opt-insert__li('this is opt list item')
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

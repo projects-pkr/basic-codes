@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/boostrap/project s/project 1/card.css">
+</head>
+<body>
+    
+    <body>
+    
+        <div class="card">
+            <div class="one_innerbox">
+                <div class="two_innerbox">
+                   <h3>this is a box</h3>
+                   <div class="text">
+    
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officiis!</p>
+                   </div>
+                   <input type="button" value="click here"> 
+                </div>
+            </div>
+        </div>
+        <script>
+            let click=document.getElementsByTagName("input")[0];
+            click.addEventListener('mouseover', call);
+            function call(){
+                let box=document.querySelector(".one_innerbox")
+                box.style.backgroundColor="red";
+                box.style.Color="green";
+                
+            }
+            click.addEventListener('mouseout', call_two);
+            function call_two(){
+                let box=document.querySelector(".one_innerbox")
+                box.style.backgroundColor="green";
+                
+                
+            }
+
+        </script>
+    </body>
+    
+</body>
+</html>

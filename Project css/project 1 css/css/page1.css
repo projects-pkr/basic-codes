@@ -1,0 +1,72 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(/img/backgroound.jpg);
+    background-size: cover;
+    width: 1200px;
+    height: 960px;
+    
+}
+
+.container {
+    background-color: white;
+    color: #34b7b6;
+    height: 130px;
+    width: 1800px;
+}
+
+#logo {
+    margin: 10px;
+    padding-top: 10px;
+    display: flex;
+
+}
+
+#search {
+    /* margin: auto; */
+    height: 5mm;
+    width: 50mm;
+    border-radius: 4mm;
+    background-color: bisque;
+    border:3px double blueviolet;     
+    position: absolute;  
+    position: absolute;
+    top: 49px;
+    left: 296px;  
+}
+
+#rightmenu {
+    border: 1px dotted darkred;
+    background-color:rgb(215, 234, 247);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin-top: 35px;
+}
+
+#rightmenu li {
+    margin: 10px;
+    float: right;
+}
+li:hover{
+    background-color: rgb(36, 230, 220);
+}
+a:hover{
+    color: rgb(4, 70, 70);
+}
+.form{
+    height: 7cm;
+    width: 5cm;
+    border:3px dashed darkred;
+    margin: 26px;
+    
+}
+.form input{
+    margin: 9px;
+}
+.btn{
+    margin: 5px;
+}

@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(210, 235, 235);
+    border-radius: 10px;
+    border: 2px double rgb(31, 3, 58);
+}
+
+.box {
+    background-color: rgb(241, 233, 233);
+    width: 100VW;
+    height: 32vw;
+    border: 2PX solid blue;
+
+}
+
+.sub_box {
+    border: 2px dashed rgb(110, 11, 11);
+    height: 50mm;
+    width: 100mm;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#b2 {
+    display: flex;
+    align-content: space-between;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+
+#inner_box1 {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    box-shadow: 10px, 20px, 0, 0, red;
+    overflow-y: visible;
+}
+
+#inner_box2 {
+    opacity: 0.75;
+    border-radius: 50%;
+    background-image: radial-gradient(red, yellow, green);
+    overflow-y: visible;
+    text-align: center;
+}
+
+#inner_box3 {
+    background-image: conic-gradient(red, yellow, green, blue, rgb(218, 94, 22));
+    border-radius: 50%;
+
+    p::first-line {
+        color: rgb(255, 255, 255);
+        font-size: large;
+
+    }
+}
+
+#inner_box4 {
+    background-image: repeating-linear-gradient(to right, violet 10%, indigo 10%, blue, green, yellow, orange, red);
+    box-shadow: 10px 30px goldenrod;
+}
+
+#inner_box5 {
+    background-image: repeating-radial-gradient(red, yellow, green);
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rebeccapurple;
+}
+
+#inner_box6 {
+    background-image: repeating-conic-gradient(red, yellow, green, blue, orange);
+    border-radius: 50%;
+    box-shadow: -10px -10px 0px 10px darkblue inset;
+}
+
+#inner_box7 {
+    background-image: url(https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMHNoYWRlfGVufDB8fDB8fHww);
+    text-align: center;
+
+    p {
+        color: antiquewhite;
+    }
+}
+
+#nth-box {
+    background-color: aqua;
+    opacity: 0.3;
+
+
+
+}
+
+#nth-box p {
+    font-size: larger;
+    font-style: bold;
+    opacity: 0.5;
+}
+
+#b3 {
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
+    overflow: scroll;
+}

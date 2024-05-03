@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map </title>
+</head>
+
+<body>
+
+    <script>
+        let value = new Map()
+        value.set('key1', "ram")
+        value.set('key2', "shyam")
+        value.set('key3', "ramu")
+        value.set('key4', "raju")
+        value.set('key5', "raja")
+        console.log(value)
+        let flower = ["lily", "sun flower", "daisy", "dahelia", "rose"]
+        flower.forEach((element) => {
+            document.write(element)
+
+        });
+        // apply filter in array using foreach-------------------------
+        flower.forEach((element) => {
+            if (element == "sun flower")
+                document.write("sun flower");
+
+        });
+        // apply filter-----------------------------------------------
+        // let flower = ["lily", "sun flower", "daisy", "dahelia", "rose"]
+        // let flower_list = flower.filter((item) => item == daisy;
+        // document.write(flower_list))
+        // apply reducein array to find sum of all values----------------------------------------
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let sum = arr.reduce(function (currnetvalue, sumvalue) {
+            return currnetvalue + sumvalue;
+
+        }, 0)
+
+        document.write("<br>")
+        document.write(sum)
+
+        // 
+    </script>
+
+</body>
+
+</html>

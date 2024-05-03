@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        body {
+            background-color: rgb(53, 46, 46);
+        }
+
+        #container {
+            height: 75vh;
+            width: 100hw;
+            background-color: blueviolet;
+        }
+
+        .box {
+            height: 20mm;
+            width: 100mm;
+            border: 2px solid rgb(141, 253, 141);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box" id="box1">
+            <h3>
+
+                this is box1
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum expedita ea fugit vel officiis, cumque
+                recusandae excepturi eos iusto quam facilis quia, asperiores dolor pariatur reprehenderit velit quaerat
+                aut omnis.</p><span id="read">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+                nostrum.</span>
+        </div>
+        <div class="box" id="box2">this is box2 </div>
+        <div class="box" id="box3">this is box3 </div>
+        <div class="box" id="box4">this is box4 </div>
+        <div class="box" id="box5">this is box5 </div>
+    </div>
+    <script>
+        let read = document.querySelector('#read')
+        document.getElementById('box1').addEventListener('click', function (e) {
+            if (read.style.display != none) {
+
+                read.style.display = 'none';
+            }
+        })
+    </script>
+</body>
+
+</html>

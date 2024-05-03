@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>griv layout</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+            row-gap: 3px;
+            background-color: bisque;
+        }
+
+        .box {
+
+            border: 2px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header {
+            height: 8vh;
+            width: 95vw;
+            grid-row-start: 1;
+            grid-grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 1;
+
+        }
+
+        #main {
+            height: 75vh;
+            width: 55vw;
+            grid-row-start: 2;
+            grid-grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        #left {
+            height: 17vh;
+            width: 75vw;
+            grid-row-start: 1;
+            grid-grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 1;
+
+        }
+
+        #right {
+            height: 18vh;
+            width: 75vw;
+            grid-row-start: 1;
+            grid-grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 1;
+
+        }
+
+        #footer {
+            height: 8vh;
+            width: 95vw;
+            grid-row-start: 1;
+            grid-grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="header">this is header</div>
+        <div class="box" id="main">this is main contain</div>
+        <div class="box" id="left">this is left side bar</div>
+        <div class="box" id="right">this is right side bar</div>
+        <div class="box" id="footer">this is footer</div>
+
+    </div>
+</body>
+
+</html>

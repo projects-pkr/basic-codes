@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fectorial of given number</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box {
+            height: 50mm;
+            width: 100mm;
+            background-color: rgb(201, 168, 231);
+            border: 1.2px soloid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #input {
+            height: 10mm;
+            width: 50mm;
+        }
+
+        #output {
+            height: 10mm;
+            width: 50mm;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box">
+        <input id="input" type="text" placeholder="Enter a number">
+        <label for="btn">Click here to find factorial of given Number</label>
+        <button id="btn">click</button>
+        <label for="output">Result</label>
+        <div id="output"></div>
+    </div>
+    <script>
+        document.querySelector('#btn').addEventListener("click", fac);
+
+        function fac() {
+            let num = document.querySelector('#input').value;
+            let fact = 1;
+
+            for (let i = 1; i <= num; i++) {
+                fact =fact*i;
+            }
+
+            document.getElementById('output').innerHTML = fact;
+        }
+    </script>
+</body>
+
+
+</html>

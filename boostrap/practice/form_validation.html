@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .container{
+            height: 40vh;
+            width: 50vw;
+            background-color: rgb(235, 234, 234);
+            border: 2px double darkred;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        
+        }
+        #username{
+            height: 10mm;
+    width: 22rem;
+    margin-top: 36px;
+    margin-right: 18rem;
+    margin-left: 1rem;
+        }
+        #password{
+            height: 10mm;
+    width: 22rem;
+    margin-top: 36px;
+    margin-right: 18rem;
+    margin-left: 1rem;
+        }
+        #msg{
+            height: 6mm;
+            width: fit-content;
+            margin-left: 6rem;
+            background-color: rgb(255, 255, 255);
+            color: rgb(247, 75, 12);
+            text-align: center;
+            margin-top: 10px;
+            
+        }
+        #submit{
+            height: 10mm;
+    width: 10rem;
+    margin-top: 36px;
+    margin-right: 18rem;
+    margin-left: 10rem;
+        
+        }
+
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <form class="form">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <div id="msg"></div>
+            <input id="submit" type="button" value="SUBMIT">
+        </form>
+    </div>
+
+    <script>
+let pass=document.querySelector('#password');
+pass.addEventListener('mouseover',msg)
+function msg(){
+    let msg=document.querySelector('#msg')
+    msg.innerHTML="password must contain at least one special character";
+    // msg.style.color="orange"
+    // msg.style.backgroundcolor="black"
+}
+
+        var submit = document.querySelector('#submit');
+
+        submit.addEventListener('click', formValidation);
+
+        function formValidation() {
+            let username = document.querySelector('#username').value;
+            let password = document.querySelector('#password').value;
+
+            if (username == null || username.trim() === "") {
+                alert("Please enter a username. It can't be blank.");
+                return false;
+            }
+
+            if (password.length < 8 || password.trim() === "") {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            if (!containsSpecialCharacter(password)) {
+                alert("Password must contain at least one special character.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function containsSpecialCharacter(str) {
+            let specialCharacters = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            return specialCharacters.test(str);
+        }
+        
+    </script>
+</body>
+
+ </html>
+    
+    
+         

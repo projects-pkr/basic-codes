@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //note:-
+    // oops:-in java script oops is a coding style or pattern that make our code optimized and resusable usimh ot we can esealy dug and organized our codein java script oops concept made from call and object . {class in java script contain properties (variables) and methode(functions)}.and {objec are collection of  }
+// there are three ways to create mthod in js-
+// 1 constructor 2.prototype 3.static
+// ----------------end----------------------------------------------------
+// ---------------example--------------------
+// class cls{
+//     msg(){
+//         console.log('msg is a method-1 in java script')
+//     }
+//     msg_2(){
+//         console.log('msg is a method-2 in java script')
+//     }
+
+// }
+// let obj= new cls();
+//     //here obj variable made a object that contain msg (here msg is a method)
+//   // here msg is a prototype and we called this method in below line
+//     obj.msg()
+//     obj.msg_2()
+// --------------end--------------------
+    // ------------------constructor--------------------------------------
+//     class student{
+//         constructor(){
+//             console.log('this is constructor method its called self here no ned to call this method');
+// }}
+// let a=new student(); 
+// ---------------passing value ---------------------
+// class student{
+//         constructor(name,age){
+//             this.per_name=name;
+//             this.per_age=age;
+// console.log('this is constructor method its called self here no ned to call this method');
+// }
+// wish(){
+//     console.log("wellcome " + this.per_name +"'s age is " + this.per_age)
+// }}
+// let a=new student("ram","infinite"); 
+// a.wish()
+// ----------------using static method --------------------
+class student{
+        constructor(name,age){
+            this.per_name=name;
+            this.per_age=age;
+console.log('this is constructor method its called self here no ned to call this method');
+
+}
+static example(){
+    console.log("this is a static method");
+}
+wish(){
+    console.log("wellcome " + this.per_name +"'s age is " + this.per_age)
+}}
+let a=new student("ram","infinite"); 
+// in below line we call static method where(student=class name ,example =static name) 
+student.example();
+    </script>
+</body>
+</html>

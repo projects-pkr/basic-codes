@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal portfolio</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Styles for header section */
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(66, 114, 129);
+        }
+
+        /* Styles for navigation bar */
+        nav {
+            display: flex;
+            margin: auto;
+            width: 90%;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(74, 11, 248);
+            font-weight: bolder;
+        }
+
+        nav .li li a:hover {
+            /* background-image: repeating-conic-gradient(orange 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg, red 30deg 40deg); */
+            border-radius: 2px;
+            border-radius: 2px;
+            color: rgb(11, 39, 111);
+            border: 1px solid grey;
+        }
+
+        .logo {
+            width: 20mm;
+            height: 20mm;
+            background-image: repeating-conic-gradient(yellow 10deg 20deg, green 20deg 30deg, red 30deg 40deg);
+            border: 2px solid red;
+            border-radius: 50%;
+            animation-name: logo_ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+
+
+        }
+
+        .run_bar {
+            height: 10mm;
+            width: 100vw;
+            background-color: rgb(71, 66, 66);
+            display: flex;
+            align-items: center;
+
+        }
+
+
+        .run_bar marquee {
+            color: rgb(0, 255, 255);
+
+        }
+
+
+        /* Styles for body section */
+        .body {
+            height: 151mm;
+            width: 100vw;
+            background-color: bisque;
+            opacity: .7;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .body h1 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .P_1 {
+            color: orange;
+            margin-bottom: 30px;
+        }
+
+        .P_2 {
+            color: black;
+            line-height: 20px;
+        }
+
+        .btn {
+            background: lightsalmon;
+            padding: 10px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 30px 8px;
+            border-radius: 5px;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        /* button animation */
+        .btn {
+            animation-name: lrn_ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+        #lrn:hover {
+            background-image: linear-gradient(to left, rgb(186, 255, 186), rgb(94, 94, 221));
+
+        }
+
+        #hire {
+            background: black;
+        }
+
+        #hire:hover {
+            background-image: radial-gradient(rgb(171, 231, 184) 60%, rgb(167, 107, 164) 10%);
+            animation-play-state: paused;
+
+        }
+
+        span {
+            color: seagreen;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .notice {
+
+            height: 120mm;
+            width: 20vw;
+            border: 2px dashed grey;
+        }
+
+        /* Styles for image section */
+        .image {
+            height: 150mm;
+            width: 40vw;
+            bottom: 0;
+            right: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+        }
+
+        #b_1 {
+            height: 50mm;
+            width: 100mm;
+            border: 2px solid salmon;
+            animation-name: b_1-ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+
+        }
+
+        #b_2 {
+            height: 45mm;
+            width: 100mm;
+            border: 2px solid salmon;
+            animation-name: b_2-ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+
+        }
+
+
+
+        #b_3 {
+            height: 45mm;
+            width: 100mm;
+            border: 2px solid salmon;
+            animation-name: b_3-ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+
+        }
+
+        .image img {
+            height: 70%;
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-60%);
+        }
+
+        /* animation section */
+
+        @keyframes b_3-ani {
+            33% {
+                background-color: rgb(187, 187, 255);
+            }
+
+            66% {
+                background-color: rgb(1251, 186, 186);
+            }
+
+            99% {
+                background-color: rgb(189, 255, 232);
+            }
+        }
+
+        @keyframes lrn_ani {
+            0% {
+                color: rgb(19, 255, 255);
+            }
+
+            25% {
+                color: rgb(9, 9, 255);
+            }
+
+            50% {
+                color: rgb(255, 136, 0);
+            }
+
+            75% {
+                color: rgb(5, 255, 5);
+            }
+
+            100% {
+                color: aquamarine;
+            }
+
+        }
+
+
+
+
+        @keyframes logo_ani {
+            10% {
+                transform: rotate(10deg);
+            }
+
+            50% {
+                transform: rotate(50deg);
+            }
+
+            100% {
+                transform: rotate(100deg);
+            }
+
+        }
+
+        @keyframes b_1-ani {
+            33% {
+                background-color: rgb(251, 186, 186);
+            }
+
+            66% {
+                background-color: rgb(189, 255, 232);
+            }
+
+            99% {
+                background-color: rgb(187, 187, 255);
+            }
+
+        }
+
+        @keyframes b_2-ani {
+            33% {
+                background-color: rgb(189, 255, 232);
+            }
+
+            66% {
+                background-color: rgb(187, 187, 255);
+            }
+
+            99% {
+                background-color: rgb(251, 186, 186);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <class class="header">
+        <nav>
+            <div class="logo">
+
+            </div>
+            <ul class="li">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="body">
+            <div class="run_bar">
+                <marquee behavior="alternate " direction="right">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Praesentium,
+                    labore.</marquee>
+
+            </div>
+
+            <!-- Body section -->
+
+            <div class="content">
+
+                <div>
+
+                    <p class="P_1">GET EVERY SINGLE SOLUTIONS.</p>
+                    <h1>Hello <br> I'm XYZ<span>XYZ</span></h1>
+                    <p class="P_2">From concept to deployment, I bring ideas<br> to life as a versatile front end
+                        developer...</p>
+                    <button type="button" class="btn" id="lrn">LEARN MORE</button>
+                    <button type="button" class="btn" id="hire">HIRE ME</button>
+                </div>
+
+                <!-- Image section -->
+                <div class="image">
+                    <div id="b_1">
+                        <div class="skew-box_1">
+
+                        </div>
+
+                    </div>
+                    <div id="b_2"> </div>
+                    <div id="b_3"></div>
+                </div>
+                <!-- notice section -->
+                <div class="notice">
+                    <marquee behavior="" direction="up"> 1.Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Nesciunt soluta optio laboriosam natus distinctio incidunt ducimus perspiciatis, deleniti
+                        sint
+                        explicabo. </marquee>
+                    <marquee behavior="" direction="up" scrolldelay="3s"> 2.Lorem ipsum, dolor sit amet
+                        consectetur
+                        adipisicing elit. Tempore, architecto in. Perferendis maxime quaerat tenetur cum in, vel cumque
+                        aut.
+                    </marquee>
+                    <marquee behavior="" direction="up">3.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Harum, sed? </marquee>
+
+                </div>
+            </div>
+        </div>
+    </class>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=prompt('entervalue of array with sapreted by(,)')
+let org_arr=arr.split(",");
+console.log(org_arr)
+let rev_arr= org_arr.map((element, index, array) => {
+         
+         return array[array.length - index - 1];
+      })
+    
+    document.write("original array is:");
+    document.write(org_arr);
+    document.write("reversed array is:");
+    document.write(rev_arr);
+    
+
+
+    </script>
+</body>
+</html>

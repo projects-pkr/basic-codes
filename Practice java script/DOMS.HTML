@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(44, 42, 42);
+            color: antiquewhite;
+
+        }
+
+        #form_area {
+            height: 60mm;
+            width: 90mm;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: cornsilk;
+            color: blueviolet;
+            border-radius: 10px;
+            border: 2px solid rgb(83, 11, 11);
+        }
+
+        #ltd {
+            height: 60mm;
+            width: 90mm;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: cornsilk;
+            color: blueviolet;
+            border-radius: 10px;
+            border: 2px solid rgb(83, 11, 11);
+        }
+
+        .npt {
+            height: 10mm;
+            width: 70mm;
+            background-color: rgb(214, 213, 213);
+        }
+
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="heading_1">this is m;y first heading_1</h1>
+        <p class="para" id="fir_p">this is my first paragraph</p>
+        <p class="para" id="sec_p">this is my second paragraph</p>
+        <p class="para" id="thi_p">this is my third paragraph</p>
+        <p class="para" id="fou_p">this is my fourth paragraph</p>
+        <p class="para" id="fiv_p">this is my fifth paragraph</p>
+    </div>
+    <div id="form_area">
+        <input class="npt" id="name" type="text" placeholder="name">
+        <input class="npt" id="mid_name" type="text" placeholder=" mid-name">
+        <input class="npt" id="last_name" type="text" placeholder="last-name">
+        <div class="dtn_grp">
+            <button id="btn">save</button>
+            <button id="clr">clear</button>
+        </div>
+
+    </div>
+    <div class="form">
+        <form action="#" method="post">
+            <div class="name">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <!-- Father's Name -->
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+                <br>
+            </div>
+            <div class="radio">
+
+                <label for="maritalStatus">Marital Status:</label>
+                <input type="radio" id="single" name="maritalStatus" value="single" checked>
+                <label for="single">Single</label>
+                <input type="radio" id="married" name="maritalStatus" value="married">
+                <label for="married">Married</label>
+                <br>
+            </div>
+
+            <div class="drop">
+
+                <label for="dropdown">Select an option:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option4">Option 4</option>
+                    <option value="option5">Option 5</option>
+                </select>
+                <br>
+            </div>
+            <div class="btn">
+
+                <input type="submit" value="Submit">
+            </div>
+
+
+        </form>
+    </div>
+    <div id="ltd">
+        this is an unordered list
+        <ul id="uld">
+            <li class="list">this is list item one</li>
+            <li class="list">this is list item two</li>
+            <li class="list">this is list item three</li>
+            <li class="list">this is list item four</li>
+            <li class="list">this is list item five</li>
+            <li class="list">this is list item six</li>
+
+        </ul>
+
+    </div>
+    <ul id="sec_uld">
+        <li class="list_item">this is list item one of second list</li>
+        <li class="list_item">this is list item two of second list</li>
+    </ul>
+    <script>
+        // let form_name = (document.querySelector('.form'))
+        // console.log(form_name.children);
+        // console.log(form_name.childNodes);
+        // create din in body by java script-----------------------------------------------
+        let div_crt = document.createElement('div')
+        div_crt.className = "div_3"
+        div_crt.style.height = "30mm"
+        div_crt.className = "div_3"
+
+        // write datain div first method--------------------
+        div_crt.innerHTML = "this is div"
+        div_crt.style.backgroundColor = "grey";
+        //  second method---------------      
+        let text = document.createTextNode('this is line two of  this div')
+        div_crt.appendChild(text)
+        // create paragraph---------
+        let para = document.createElement('p')
+        para.className = "para"
+        div_crt.innerText = "this is paragraph"
+
+        // this line is written in last its must
+        document.body.appendChild(div_crt)
+
+
+        // let conarray = Array.from(ltd)
+        // document.write(conarray)
+        // // convert a nodelist in array ---------------------------------------------------------
+        // const nodeList = document.querySelectorAll('.list');
+
+        // const arrayFromNodeList = Array.from(nodeList);
+
+        // console.log(arrayFromNodeList);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

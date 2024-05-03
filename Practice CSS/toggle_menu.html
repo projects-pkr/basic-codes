@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toogle menu</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* header section */
+    .header {
+        height: 10vh;
+        width: 100vw;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sym {
+        height: 20mm;
+        width: 20mm;
+        border: 1.5px solid green;
+    }
+
+    .search {
+        height: 10mm;
+        width: 40mm;
+        border-radius: 5px;
+        border: 1px double grey;
+        box-shadow: 2px 2px 3px 2px rgb(22, 75, 135) inset;
+    }
+
+    .sub_log {
+        height: 8mm;
+        width: 20mm;
+        border-radius: 30%;
+        border: 2px 2px solid rgb(229, 193, 243);
+        box-shadow: 2px 2px 2px violet;
+    }
+
+    /* body section */
+    .content {
+        height: 100vh;
+        width: 100vw;
+        border: 2px solid rgb(6, 18, 151);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .con_box {
+        height: 100vh;
+        width: 50mm;
+        border: 1px solid black;
+    }
+
+    #left {}
+
+    #left .menu {
+        list-style: none
+    }
+
+    .menu li {
+        text-decoration: none;
+        transform: scaleX(-100px);
+    }
+
+    .checkbox {
+        height: 10px;
+        width: 20px;
+        position: absolute;
+
+    }
+
+    .checkbox:checked~menu {
+        display: block;
+    }
+
+    .r_sub1 {
+        height: 10mm;
+        width: 30mm;
+        background-color: rgb(111, 22, 75);
+        transform: scaleX(20deg);
+
+    }
+
+    .r_sub2 {
+        height: 10mm;
+        width: 30mm;
+        background-color: rgb(153, 99, 32);
+        transform: skewX(20deg)
+    }
+
+    .r_sub3 {
+        height: 10mm;
+        width: 30mm;
+        background-color: rgb(11, 84, 85);
+        transform: rotate(30deg);
+    }
+
+
+
+    /* footer section */
+    .footer {
+        height: 10vh;
+        width: 100vw;
+        border: 2px solid rgb(0, 0, 0);
+
+    }
+</style>
+
+<body>
+    <!-- header section  -->
+    <div class="header">
+
+        <input type="checkbox" class="chekbox">
+        <div class="search"> Search Here.......</div>
+        <div class="log">
+            <div class="sub_log">Login</div>
+            <div class="sub_log">Contact</div>
+        </div>
+    </div>
+    <!-- body section  -->
+
+    <div class="content">
+        <div class="con_box" id="left">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">INFO</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="con_box" id="mid"></div>
+        <div class="con_box" id="right">
+            <div class="r_sub1">
+                this is sub box-1 with scale property
+            </div>
+            <div class="r_sub2">
+                this is sub box-2 with skew property
+            </div>
+            <div class="r_sub3">
+                this is sub box-3 with rotate property
+            </div>
+        </div>
+    </div>
+    <!--footer section  -->
+
+    <div class="footer"></div>
+
+</body>
+
+</html>

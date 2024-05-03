@@ -1,0 +1,62 @@
+.card{
+    height: 20rem;
+    width: 20rem;
+    border:1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.one_innerbox{
+    height:19rem;
+    width:19rem;
+    border: 2px solid green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.two_innerbox{
+height:18rem;
+width:18rem;
+    border: 2px solid rgb(41, 6, 6);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.text{
+    width: 15rem;
+    height: fit-content;
+
+}
+.one_innerbox:hover{
+    background-color: blue;
+    fill-opacity: 3%;
+    color: rgb(255, 255, 255);
+    animation-name: box_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes box_animation {
+    20%{
+        
+
+    }
+    40%{
+
+    }
+    60%{
+
+    }
+    80%{
+
+    }
+    100%{
+
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        border: 2px solid grey;
+        width: 40vh;
+        margin: 10px,30px;
+
+    }
+    h1{
+        color: blue;
+        background-color: black;
+        text-align: center;
+    }
+div{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+input[type='text'] {
+            padding: 12px;
+            border: 2px solid red;
+        }
+input[type='date'] {
+            padding: 23px;
+            border: 2px solid rgb(76, 196, 233);
+        }
+input[type='submit'] {
+            padding: 2px;
+            margin: 2pxs;
+            border: 2px  inset rgb(114, 85, 194);
+        }
+input[type='reset'] {
+            padding: 2px;
+            margin: 2pxs;
+            border: 2px  inset rgb(114, 85, 194);
+        }
+        label{
+            background-color: beige;
+            color: blueviolet;
+            margin-left: 10px;
+        }
+        .input{
+            background-color: beige;
+            color: blueviolet;
+            margin-left: 10px;
+        }
+        .gender{
+        display: inline;
+        }
+</style>
+</head>
+<body>
+    <div class="box">
+
+    <h1>Introduction Form</h1>
+    <form action="comment.html">
+        <!-- action is a attribue that define address of database where data be store-->
+        <div class="input"> Name : <input type="text" name="name" id=""></div>
+        <div class="input">Father's name : <input type="text" father name="" id=""></div>
+        <label for="mother name">Mother's name : </label>
+        <input type="text" name="mother's name" id="mother name" placeholder="Mother's Name">
+        <!-- lable tag hilight related bar in form -->
+        <label for="DOB">Date Of Birth : </label>
+        <input type="date" name="dob" id="DOB">
+        <label for="email">E-mail : </label>
+        <input type="email" name="Email" id="email">
+        <label for="about">Talk Abour Your Keypoint : </label>
+        <textarea name="abot your self" id="about3" cols="30" rows="3"></textarea>
+       <div class="gender">
+        <label for="gender">Gender : </label>
+            <input type="radio" name="Gender" id="gender">Male <input type="radio" name="Gender" id="gender">Female <input
+                type="radio" name="Gender" id="gender">Other 
+       </div> 
+        <label for="citigen">Are you citigen of CG ? : </label>
+        <input type="checkbox" name="domisile" id="citigen">
+        <label for="citigen">Have you domecile certificate ? : </label>
+        <input type="checkbox" name="domesile" id="citigen" checked> 
+        <div><label for="district">select district</label>
+            <select name="district" id="district">
+                <option name="district" id="district">select</option>
+                <option name="district" id="district">Korba</option>
+                <option name="district" id="district">Bilaspur</option>
+                <option name="district" id="district">Janjgir-Champa</option>
+                <option name="district" id="district">Raigarh</option>
+                <option name="district" id="district">Raipur</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="submit" value="SUBMIT NOW">
+            <input type="reset" value="RESET NOW">
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquarium </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/boostrap/projects/project_2/css/stylesheet_for_homepage.css">
+</head>
+
+<body>
+  <!-- -------navbar-------------- -->
+  <div class="row d-flex justify-content-evenly align-items-center">
+    <div class="icon col-2 h-25">
+      <a class="navbar-brand" href="#">
+        <img src="/boostrap/projects/project_2/aqu_images/Fish-Icon.jpg" alt="Bootstrap" width="50" height="50">
+      </a>
+    </div>
+    <div class="list col-7 offset-1">
+      <nav class="navbar navbar-expand-lg bg-body-primary w-100 h-100">
+        <div class="container-fluid col-5">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown ms-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu ms-5">
+                  <li><a class="dropdown-item" href="#">Aquarium</a></li>
+                  <li><a class="dropdown-item" href="#">Foods and Suppliments</a></li>
+                  <li><a class="dropdown-item" href="#">Plants & Decorations</a></li>
+                  <li><a class="dropdown-item" href="#">Fish</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-2 ">
+      <form class="d-flex" role="search">
+        <input class="form-control me-5" type="search" placeholder="Enter Keyword" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">&#128269;</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ------------crausel------------- -->
+  <div class="row">
+    <div class="col-12">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="/boostrap/projects/project_2/aqu_images/background stone.jpg " class="d-block w-100"
+              alt="background wallpaper" style="height: 50vh; width: 100vw;">
+            <div class="carousel-caption d-none d-md-block" id="textbox_first">
+              <h5>Real Adventure</h5>
+              <h1>Best Aquarium Solution</h1>
+              <p>We provide custom size Aquarium manufacturing and other services.</p>
+              <button type="button" class="btn btn-primary">Contact Now</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/boostrap/projects/project_2/aqu_images/background corel and fish.jpg" class="d-block w-100"
+              alt="background wallpaper" style="height: 50vh; width: 100vw;">
+            <div class="carousel-caption d-none d-md-block" id="textbox_second">
+              <h5>The Best Experience!</h5>
+              <h1>Best Aquarium accesories For Your Aquarium</h1>
+              <p>We have a Wide range Aquarium accesories for care your <span>Fish</span></p>
+              <button type="button" class="btn btn-primary">Contact Now</button>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/boostrap/projects/project_2/aqu_images/background sea.jpg" class="d-block w-100"
+              alt="background wallpaper" style="height: 50vh; width: 100vw;">
+            <div class="carousel-caption d-none d-md-block" id="textbox_third">
+              <h5>Underwater Zoo</h5>
+              <h1>Create Beautiful Aquarium </h1>
+              <p>We have wide range of fishes and shrimps and corel and other aquatic plants</p>
+              <button type="button" class="btn btn-primary">Contact Now</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev" id="carausel-prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next" id="carausel-next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- carausel work conmleted -->
+  <!---------img card-1--------------->
+  <div class="row h-50 mt-3 ">
+    <div class="col-6 d-flex justify-content-around align-items-center ">
+      <h4 class="vert_text">AquaWorld</h4>
+      <div class="card" style="width: 37rem;">
+        <div class="card-body">
+          <h2 class="card-title">Aquarium Design, Manufacture</h2>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet.</h6>
+          <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloribus?Some quick
+            example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Contact Now</a>
+          <a href="#" class="card-link">Explore More..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <img id="img_one" src="/boostrap/projects/project_2/aqu_images/colorful fish aquarium.jpg" alt="">
+    </div>
+  </div>
+  <!-- img card-2 -->
+  <div class="row h-50 mt-3">
+    <div class="col-6 d-flex justify-content-around align-items-center ">
+      <img id="img_two" src="/boostrap/projects/project_2/aqu_images/manu little fish.jpg" alt="">
+    </div>
+    <div class="col-6">
+      <div class="card" style="width: 37rem;">
+        <div class="card-body">
+          <h2 class="card-title">Aquarium Maintenance Services</h2>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Lorem ipsum dolor sit amet.</h6>
+          <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloribus?Some quick
+            example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Contact Now</a>
+          <a href="#" class="card-link">Explore More..</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3" id="box">
+    <div class="col-12 d-flex justify-content-around align-items-center">
+      <!-- card-1 -->
+<div class="box">
+  <div class="img">
+    <img src="/boostrap/projects/project_2/aqu_images/png/icon2.png" alt="">
+  </div>
+  <div class="text"><h3>Maintenance</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia?</p></div>
+  <div class="link"><a href="#">MORE INFO</a></div>
+</div>
+      <!-- card-2 -->
+      <div class="box">
+        <div class="img">
+          <img src="/boostrap/projects/project_2/aqu_images/png/fish.png" alt="">
+        </div>
+        <div class="text"><h3>Helth Services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia?</p></div>
+        <div class="link"><a href="#">MORE INFO</a></div>
+      </div>
+      <!-- card-3 -->
+      <div class="box">
+        <div class="img">
+          <img src="/boostrap/projects/project_2/aqu_images/png/umbrela.png" alt="">
+        </div>
+        <div class="text"><h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia?</p></div>
+        <div class="link"><a href="#">MORE INFO</a></div>
+      </div>
+      <!-- card-4 -->
+      <div class="box">
+        <div class="img">
+          <img src="/boostrap/projects/project_2/aqu_images/png/setting.png" alt="">
+        </div>
+        <div class="text"><h3>Consultation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia?</p></div>
+        <div class="link"><a href="#">MORE INFO</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- counting section -->
+  <div class="row d-flex align-items-start " id="back_img">
+    <div class="col-6" id="count_text">
+<h1>Leaders in the market</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quaerat inventore quos laborum suscipit, aperiam corporis amet maxime sapiente velit exercitationem esse ab provident tempora eos quia, earum ut maiores, itaque aliquid? Dignissimos inventore quas totam non blanditiis eligendi nisi.</p>
+<div class="countdown">
+  <div class="client" data-value="2000">0000 + Clients</div>
+  <div class="fish" data-value="6000">0000 + Fishes</div>
+  <div class="aqu" data-value="3000">0000 + Aquariums</div>
+</div>
+    </div>
+    <div class="col-5" id="img_div">
+      <img id="count_img" src="/boostrap/projects/project_2/aqu_images/background stone.jpg" alt="">
+      
+    </div>
+  </div>
+ <!-- -------------card roup start ----------------------->
+ <div class="row" id="cards_group">
+ <div class="col-12" id="card_hold_div">
+<!-- card_1 -->
+<div class="card shadow-lg p-3 mb-5 bg-body-warning-subtle rounded " style="width: 18rem;">
+  <img src="/boostrap/projects/project_2/aqu_images/subhankin.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Looking for Aquarium Specialists?</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">READ MORE</a>
+  </div>
+</div>
+<!-- card-2 -->
+<div class="card shadow-lg p-3 mb-5 bg-body-warning-subtle rounded" style="width: 18rem;">
+  <img src="/boostrap/projects/project_2/aqu_images/aquarium.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Diffrent Aquarium For Diffrent Ideas</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">READ MORE</a>
+  </div>
+</div>
+<!-- card-3 -->
+<div class="card shadow-lg p-3 mb-5 bg-body-warning-subtle rounded " style="width: 18rem;">
+  <img src="/boostrap/projects/project_2/aqu_images/fishes plants.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Beautiful Fishes,corala and more...</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">READ MORE</a>
+  </div>
+</div>
+  </div>
+ </div>
+ <!----------- footer ---------------->
+ <div class="row" >
+  <div class="col-12"id="boxgrpmain">
+    <div class="head"><h1>Aqua World</h1>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 w-60 " type="search" placeholder="Enter Your Mail ID" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="boxgrp">
+      <div class="cust"> <h3>Customer Care</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">How We Work</a></li>
+        <li><a href="#">Aquarium Info</a></li>
+        <li><a href="#">Main Question</a></li>
+        <li><a href="#">Information</a></li>
+        </ul></div>
+      <div class="knowus">
+        <h3>Get To Know Us</h3>
+        <ul>
+          <li><a href="#">Maintenance</a></li>
+          <li><a href="#">Aquarium Design</a></li>
+          <li><a href="#">Cleaning Services</a></li>
+          <li><a href="#">Aquarioum Suppliments</a></li>
+          <li><a href="#">Health Services</a></li>
+        </ul>
+      </div>
+      <div class="shop"><h3>Ways to Shop</h3>
+        <ul>
+          <li><a href="#">Our Store</a></li>
+          <li><a href="#">Shopping Cart</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Our Offers</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul></div>
+      <div class="legal"><h3>Legal</h3><ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Term Of Use</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Support</a></li>
+      </ul></div>
+    </div>
+    <div class="bottom">	&#169; Aqua World. All rights reserved | Designed by <span id="name">Pradeep kumar</span></div>
+  </div>
+ </div>
+
+
+  <!-- ---------------java script----------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+    <!-- java script countdown -->
+  <script src="/boostrap/projects/project_2/Java_script.js"></script>
+</body>
+
+</html>

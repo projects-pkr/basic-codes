@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci of given number</title>
+    <style>body{
+        display: flex;
+        align-items: center;
+    justify-content: center;
+
+    }
+        .box{
+            height: 50mm;
+            width: 100mm;
+            background-color: rgb(201, 168, 231);
+            border: 1.2px soloid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #input{
+            height: 10mm;
+            width: 50mm;
+        }
+        #output{
+            height: 10mm;
+            width: 50mm;
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input  id="input" type="text" placeholder="Enter a number">
+        <label for="btn">Click here to find febonacci series of given Number</label>
+        <button id="btn">click</button>
+        <!-- <label for="output">Result</label>
+        <div id="output"></div> -->
+    </div>
+    <script>
+        
+let click=document.querySelector('#btn').addEventListener("click",fab);
+function fab(){
+    let num=document.querySelector('#input').value;
+   let sum;
+   let no_1=0;
+   let no_2=1;
+
+   document.write(no_1+" "+ no_2 +" ")
+    for (let i = 0; i <= num ;i++) {
+        let sum=no_1+no_2;
+        no_1=no_2;
+        no_2=sum
+// console.log(sum);
+ //document.getElementById('output').innerHTML=sum;
+document.write(sum+" ")
+    }
+     
+};
+    </script>
+</body>
+</html>

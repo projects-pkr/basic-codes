@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+
+
+
+        }
+
+        .box_1 p {
+            animation-name: animation-1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animation-1 {
+            0% {
+                font-size: 12mm;
+                color: rgb(243, 78, 37);
+                /* transform: rotate(180deg); */
+
+            }
+
+            25% {
+                font-size: 12mm;
+                color: rgb(241, 196, 48);
+                /* transform: rotate(40deg); */
+            }
+
+            50% {
+                font-size: 12mm;
+                color: rgb(148, 240, 43);
+                /* transform: rotate(60deg); */
+
+            }
+
+            100% {
+                font-size: 12mm;
+                color: rgb(9, 99, 9);
+            }
+        }
+
+
+        .box_2 p {
+            animation-name: animation-2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes animation-2 {
+            0% {
+                font- margin-left: 0px;
+                color: green;
+                font-size: 12mm;
+
+            }
+
+            100% {
+                margin-left: 100vw;
+                color: blue;
+                font-size: 12mm;
+
+            }
+        }
+
+        .box_3 p {
+            animation-name: animation-3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes animation-3 {
+            0% {
+                margin-left: 100vw;
+                color: green;
+                font-size: 12mm;
+
+            }
+
+            100% {
+                margin-left: 0vw;
+                color: blue;
+                font-size: 12mm;
+
+            }
+        }
+
+        .box_4 p {
+
+            animation-name: animation-4;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-direction: normal;
+        }
+
+        @keyframes animation-4 {
+            0% {
+                margin-left: 0;
+                color: green;
+            }
+
+            50% {
+                margin-left: 50%;
+                color: rgb(199, 202, 17);
+            }
+
+            100% {
+                margin-left: 100%;
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation</h1>
+    <div class="container">
+
+
+        <div class=" box_1">
+            <p>animation-1</p>
+            <hr>
+        </div>
+        <div class="box_2">
+            <p>animation-2
+            </p>
+            <hr>
+            <div class="box_3">
+                <p>animation-3</p>
+                <hr>
+            </div>
+            <div class="box_4">
+                <p>animation-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi excepturi quis corporis
+                    ex distinctio perspiciatis quaerat modi nihil necessitatibus obcaecati!</p>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

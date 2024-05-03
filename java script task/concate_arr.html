@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=prompt('enter value of array-1 sapreted by (,)');
+        let array_1=arr1.split(",");
+        // console.log(array_1);
+        document.write("first array is:-"+array_1)
+       
+        let arr2=prompt('enter value of array-2 sapreted by (,)');
+        let array_2=arr2.split(",");
+        // console.log(array_2);
+        document.write("second array is:-"+array_2 )
+        
+        let result_array;
+        result_array=[...array_1,...array_2]
+        // console.log(result_array);
+        final_array=[...new Set(result_array)]
+        // console.log(final_array);
+document.write("combined array with unique value is:"+final_array)
+        
+        
+        
+    </script>
+    
+</body>
+</html>

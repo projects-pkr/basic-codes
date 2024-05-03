@@ -1,0 +1,230 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    overflow-x: hidden;
+
+}
+/* ------------ carausel arrow styling---------------- */
+#carausel-prev {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-left: 2rem;
+
+}
+
+#carausel-next {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-right: 65rem
+}
+/* ------------- carausel image -------------------- */
+
+#textbox_first{
+    background-color: rgba(192, 255, 234, 0.498);
+    color: rgb(5, 3, 83);
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+#textbox_second{
+    background-color: rgba(165, 190, 255, 0.639);
+    color: rgb(48, 2, 33);
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+#textbox_third{
+    background-color: rgba(151, 255, 141, 0.539);
+    color: rgb(48, 3, 3);
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+/*------------------ animation------------------- */
+@keyframes scale {
+    25%{
+        transform: scale(.25);
+    }
+   
+    100%{
+        transform: scale(1);
+    }
+    
+}
+/* -----------------image section --------------*/
+
+#img_one{
+    height: 15rem;
+    width: 40rem;
+    border: 2px solid #495057;
+    border-radius: 10px;
+}
+#img_two{
+    height: 15rem;
+    width: 40rem;
+    border: 2px solid #495057;
+    border-radius: 10px;
+    margin-left: 11em;
+}
+.vert_text{
+    color: blue;
+    transform: rotate(-90deg);
+
+    
+}
+#box{
+    height: 50vh;
+    width: 100vw;
+    background-color: #495057;
+}
+
+/* ---------CARD SECTION----------------------- */
+.box{
+    text-align: center;
+    height: 20rem;
+    width: 15rem;
+    color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+}
+.text h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.link a{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    color: chocolate;
+}
+/* -------------countion section----------------------- */
+#back_img{
+    height: 70vh;
+    width: 100vw;
+    background-image: url("/boostrap/projects/project_2/aqu_images/colorful\ fish.jpg");
+    background-attachment:fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+#img_div{
+   display: flex;
+   align-items: center;
+    height: 25rem;
+    width: 45rem;
+}
+#count_text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    
+
+
+}
+#count_img{
+    height: 20rem;
+    width: 40rem;
+    border: 3px solid silver;
+    box-shadow: 5px 5px 5px silver;
+
+}
+#count_img:hover{
+    border: 10px solid rgba(12, 182, 249, 0.502);
+    border-radius: 25px;
+    color: black;
+}
+
+.countdown{
+    height: 25mm;
+    width: 90mm;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 6mm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+border-radius: 5px;
+text-align: center;
+}
+.countdown:hover{
+    transform: scale(1.3);
+}
+
+/* -------------------card group----------------- */
+#card_group{
+    height: 30vh;
+    width: 100vw;
+    margin-top:30px;
+}
+#card_hold_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:-75px;
+}
+/* ------------footer ------------------- */
+#boxgrpmain{
+    height: 70vh;
+    background-color: rgb(40, 34, 34);
+    color: bisque;
+    
+    display: block;
+
+}
+#boxgrpmain h3{
+    text-shadow: 2px 2px 2px rgba(0, 242, 255, 0.466);
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxgrp{
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+.bottom{
+text-align: center;
+}
+.boxgrp li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.boxgrp li a{
+    text-decoration: none;
+    color: aqua;
+}
+ li a:hover{
+    margin-left: 1rem;
+    color: rgb(255, 234, 0);
+}
+#name{
+    background: linear-gradient(to right, #e9ff57, #7dff58,rgb(103, 93, 255),rgb(230, 45, 255));
+    -webkit-text-fill-color:transparent;
+     background-clip: text;
+    font-weight: bold;
+   
+}
+

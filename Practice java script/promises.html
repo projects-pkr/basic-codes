@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+let proexample = new Promise(function(resolve, reject){
+    
+    setTimeout(function(){
+        console.log('promise executed');
+        resolve()
+    }, 5000)
+})
+proexample.then(function(){
+    console.log('promise is executed after duration');
+})
+
+let proexample2 = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        console.log('promise is executed after 3 sec');
+    }, 3000);
+})
+proexample2.catch(function(){
+    console.log('error is catched')
+})
+let readFilePromise = new Promise((resolve, reject) => {
+ 
+  setTimeout(() => {
+    const success = true; 
+    if (success) {
+      console.log(
+
+          resolve("Data read successfully  delay with 5sec ")
+      ); 
+    } else {
+      console.log(
+
+      reject("Error:  reading data  is under progress please wait ....")
+      )
+    }
+  }, 5000); 
+});
+
+
+readFilePromise.then((data) => {
+    console.log("Success:", data);
+  })
+  .catch((error) => {
+    console.log("Error:", error);
+  });
+    </script>
+</body>
+</html>

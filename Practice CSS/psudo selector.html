@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo selector</title>
+    <style>
+        .box{
+            border: 2mm soli black;
+            background-color: bisque;
+            width: 80mm;
+            height: 50mm;
+        }
+        .field{
+            color: rgb(36, 7, 70);
+            border: 1mm solid green;
+            margin: 3mm;
+        }
+    #btn{
+        background-color: aqua;
+        border-radius: 2mm;
+        border: none;
+        cursor: pointer;
+    }
+#btn:hover{
+    background-color: rgb(8, 116, 110);
+    color: rgb(238, 238, 237);
+}
+.link:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+.link:active{
+    color: yellow;
+}
+.link:visited{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label for="user id">USER ID</label>
+        <input class="field" type="text" name="" id="user id" placeholder="USER NAME">
+        <label for="password">PASSWORD</label>
+        <input  class="field" type="text" name="" id="password" placeholder="PASSWORD">
+        <div>
+            <input id="btn" type="button" value="LOGIN">
+            <input id="btn" type="button" value="RESET">
+
+        </div>
+        <a class="link"href="/home.html">forget password</a><br>
+        <a class="link" href="/about.html">sign up/create a/c</a>
+
+
+
+
+    </div>
+    
+</body>
+</html>

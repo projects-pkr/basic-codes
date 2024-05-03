@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise yahoo</title>
+</head>
+<body>
+    <Script>
+        // *** 1st method---this syntax demonstrate simple promise --------------------------------------
+        // let status=true;
+        // let prom_name= new Promise (function (solved,failed){
+        //     if (status) {
+        //         solved("operation successfully completed")
+        //     }else{
+        //         failed("operation failed")
+        //     }
+        // });
+        // console.log(prom_name);
+        // ----------------1st method End here------------------------------------------------------
+        // *** 2nd method---in this i demonstrate promise as a functuion------------------------
+        // function prom_name(status){
+
+        //     return new Promise (function (solved,failed){
+        //         if (status) {
+        //             solved("operation successfully completed")
+        //         }else{
+        //             failed("operation failed")
+        //         }
+        //     });
+        // }
+        // console.log(prom_name("true"));
+        //-----------------------2nd method End here-----------------------------------------
+// *** 3rd method---in below demonstrate painding state and and use (catch and then) callback function her we use both seperate and chaining method to call the function useing arrow function ---------------
+// function prom_name(status){
+
+// return new Promise (function (solved,failed){
+//     console.log("plese wait (5 Sec) while completion of process");
+//     setTimeout(() => {
+//         if (status) {
+//         solved("operation successfully completed")
+//     }else{
+//         failed("operation failed")
+//     }
+//     }, 5000);
+//     // here tome out in always in mili second (1sec=1000sec)
+// });
+// }
+// let onsuccessful=(result)=>{
+//     console.log(result)
+// }
+// let onfailed=(error)=>{
+//     console.log(error)
+// }
+// prom_name(false).then(onsuccessful).catch(onfailed);
+// here i use chainig metod 
+//here we can declare function directly in the place of above line just like 
+// prom_name(false).then((result)=>{console.log(result)}).catch((result)=>{console.log(error)}-----------------------------------3rd method End here -------------------------------------------
+// *** 4th method in below line we demonstrate methemeticel opreration in it --------------------- 
+function prom_name(x,y){
+    var div=x/y;
+
+return new Promise (function (solved,failed){
+    console.log("plese wait (5 Sec) while completion of process");
+    setTimeout(() => {
+        if (x,y) {
+        solved(`answer is :${div}`)
+    }else{
+        failed("answer is infinite hence operation not comleted successfully")
+    }
+    }, 5000);
+    // here tome out in always in mili second (1sec=1000sec)
+});
+}
+let onsuccessful=(result)=>{
+    console.log(result)
+}
+let onfailed=(error)=>{
+    console.log(error)
+}
+prom_name(5,0).then(onsuccessful).catch(onfailed);
+    </Script>
+    
+</body>
+</html>

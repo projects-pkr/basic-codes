@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array destructuring</title>
+</head>
+<body>
+    <script>
+        // let person = ["ram", 25, "E01" ,"kolkata" ];
+        // let [name,age,designation,place] =person;
+        // document.write(name);
+        // document.write(age);
+        // document.write(designation);
+        // document.write(place="puri");
+        
+        
+    //   we can pass value to Array here  we can overwrite dufault value 
+// we can use rest operator here for show remainig value
+let person = ["ram", 25, "E01" ,"kolkata" ];
+        let [name,...argus] =person;
+        console.log(name );
+        console.log(argus );
+        
+    </script>
+</body> 
+</html>

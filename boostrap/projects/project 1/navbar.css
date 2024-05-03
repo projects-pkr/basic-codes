@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  
+    background-color: rgb(84, 5, 5);
+}
+.logo{
+    /* border: 1.5px solid black; */
+}
+#navbarSupportedContent{
+    /* border: 1.5px solid black; */
+    margin-left: 100px;
+}
+#navbarSupportedContent li a{
+   margin left: 10px;
+   
+}
+
+#btn{
+    /* border: 1.5px solid black; */
+    margin-right: 20mm;
+    background-image: linear-gradient(to right, rgb(116, 205, 116), rgb(131, 131, 210));
+   height: fit-content;
+   width: fit-content;
+
+}
+ */
+

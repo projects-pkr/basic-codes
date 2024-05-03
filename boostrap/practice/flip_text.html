@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip image using css and javascript only</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            height: 40vh;
+            width: 40vw;
+            background-color: rgb(241, 176, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            height: 80%;
+            width: 80%;
+            background-color: rgba(139, 6, 169, 0.279);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.slide{
+    height: 10mm;
+    width: 30mm;
+    background-color: antiquewhite;
+    color: rgb(5, 58, 41);
+    text-align: center;
+}
+       </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>this fruit is </h3>
+            <div class="slide"></div>
+        </div>
+    </div>
+    <script>
+        let slide = document.querySelector('.slide');
+        let text = ["MANGO", "APPLE", "BANANA", "GRAPES"];
+        let index = 0;
+ function fruit() {
+            slide.innerHTML = text[index];
+            index = (index + 1) ;
+            if (index==text.length-1) {
+                clearInterval(fruit)
+                }
+            
+        }
+
+        setInterval(fruit, 1000); 
+    </script>
+</body>
+
+</html>
